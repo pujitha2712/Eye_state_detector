@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+    <header>
+        <h1>EYE STATE DETECTOR</h1>
+        <p>Upload a picture to check if the eyes are open or closed.</p>
+    </header>
+    <div class="container">
+        <form method="POST" action="/" enctype="multipart/form-data">
+            <div class="field">
+                <label for="file">Choose a file:</label>
+                <input type="file" id="file" name="file" accept="image/*" required>
+            </div>
+            <div class="field">
+                <button type="submit" class="button">Upload</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>Created by ACHAL N (1JT21CS003) and PUJITHA DR (1JT21CS128)</p>
+        <p>CGIP_6A_2024_03, JIT, CGI Mini Project</p>
+    </footer>
+</body>
+</html>
